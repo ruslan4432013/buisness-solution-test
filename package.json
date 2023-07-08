@@ -14,7 +14,7 @@
     "lint-staged:tsx": "tsc --noEmit && eslint --fix 'src/**/**/*.{js,ts,tsx}'",
     "prettier": "prettier --write src/**/**/*.tsx",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": [
     "last 1 version, not dead, ie >= 11"
