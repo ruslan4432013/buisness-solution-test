@@ -1,0 +1,195 @@
+
+.site_navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0;
+  margin: 0 55px 0 0;
+  list-style: none;
+  width: 350px;
+}
+
+.site_navigation_link {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.site_navigation_link:hover {
+  opacity: 0.7;
+}
+
+.site_navigation_link:active {
+  opacity: 0.5;
+}
+
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: 15px;
+  padding: 3px 16px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.lang:hover {
+  opacity: 0.7;
+}
+
+.lang:active {
+  opacity: 0.5;
+}
+
+.lang::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.arrow_down {
+  content: "";
+  width: 8px;
+  height: 4px;
+  margin-left: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lang_ru::before {
+  background-image: url("./russia.png");
+}
+
+.lang_en::before {
+  background-image: url("./england.svg");
+}
+
+.menu {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu:hover {
+  opacity: 0.7;
+}
+
+.menu:active {
+  opacity: 0.5;
+}
+
+.menu svg {
+  fill: #d9d9d9;
+}
+
+.main_section {
+  padding-top: 95px;
+  padding-bottom: 30px;
+}
+
+.main_section h1 {
+  width: 540px;
+  margin: 0 auto;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.dropdown {
+  position: relative;
+  margin-left: auto;
+  margin-right: 15px;
+  width: 170px;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  z-index: 1;
+  width: 140px;
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 0;
+  transition: all 0.2s linear;
+  overflow: hidden;
+}
+
+.dropdown_menu .dropdown_menu_link {
+  line-height: 0;
+}
+
+.dropdown_menu_open {
+  height: 170px;
+  padding: 12px 16px;
+}
+
+.dropdown_menu_open .dropdown_menu_link {
+  line-height: 16px;
+}
+
+.dropdown_menu_item {
+  margin: 16px 0;
+}
+
+.dropdown_menu_link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown_menu_link::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.dropdown_menu_link:hover {
+  opacity: 0.7;
+}
+
+.dropdown_menu_link:active {
+  opacity: 0.5;
+}
+
+.dropdown_menu_link_ru::before {
+  background-image: url("./russia.png");
+}
+
+.dropdown_menu_link_en::before {
+  background-image: url("./england.svg");
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
