@@ -48,9 +48,11 @@ class Main extends Component<Props, State> {
             <ReviewCard key={name} name={name} review={review} date={date} />
           ))}
         </div>
-        <div className={s.pagination_wrapper}>
-          <Pagination currentPage={this.state.currentPage} totalPages={totalPages} onPageChange={this.setCurrentPage} />
-        </div>
+        {totalPages > 1 && (
+          <div className={s.pagination_wrapper}>
+            <Pagination currentPage={this.state.currentPage} totalPages={totalPages} onPageChange={this.setCurrentPage} />
+          </div>
+        )}
       </main>
     );
   }
